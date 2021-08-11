@@ -33,13 +33,11 @@ function addToSaved(e){
 document.getElementById('save-quote-list').appendChild(e.target.parentNode) //grab savequotes div and append quote being passed in -- e=click, tgt='+'btn, parent=quote
 const deleteButton = document.createElement('button') 
 deleteButton.textContent = '-'
-debugger
 e.target.parentNode.appendChild(deleteButton) //trying to add the - button
-deleteButton.addEventListener('click', deleteButton) //trying to add EL to - button
+deleteButton.addEventListener('click', deleteQuote) //trying to add EL to - button
 }
 
-function deleteButton(e){
-    debugger
+function deleteQuote(e){
 e.target.parentNode.remove() 
 }
 //tried creating function that, when called, would remove the entire quote line
