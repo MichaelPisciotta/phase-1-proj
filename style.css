@@ -8,6 +8,15 @@ body{
     background-size: 1500px 1200px;
 }
 
+.banner{
+    width: auto;
+    height: 100px;
+    color: black;
+}
+
+
+
+
 h1{
     color: white;
     font-size: 50px;
