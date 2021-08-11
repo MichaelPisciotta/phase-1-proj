@@ -14,10 +14,26 @@ function fetchJoke(){
 function displayQuote(postedQuote){
     const p = document.createElement('p')
     p.textContent = postedQuote
+    let btn = document.createElement('button')   
+    btn.addEventListener('click', addToSaved) //when you click on the '+' button, call addToSaved()
+    btn.textContent = '+'
+    p.appendChild(btn)
     document.getElementById('quote-print-div').appendChild(p)
 
-
 }
+
+function addToSaved(e){
+document.getElementById('save-quote-list').appendChild(e.target.parentNode) //e=click, tgt='+'btn, parent=quote
+// const deleteButton = document.createElement('button') 
+// deleteButton.textContent = '-'
+// e.target.parentNode.appendChild(deleteButton)
+// deleteButton.addEventListener('click', deleteButton)
+}
+
+
+// function deleteButton(e){
+// e.target.parentNode.remove(e)
+// }
 
 
 

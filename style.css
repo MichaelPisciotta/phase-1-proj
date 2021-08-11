@@ -5,14 +5,63 @@
 body{
     background-image: url("images/kanye.jpeg");
     background-repeat: no-repeat;
-    background-size: 1700px 1200px;
+    background-size: 1500px 1200px;
 }
 
 h1{
     color: white;
+    font-size: 50px;
+    text-align: center;
+
 }
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 25px;
+    margin-left: 125px;
+
+}
+
+#saved-title {
+    width: 300px;
+}
+
 
 p{
     color: white;
+    font-size: 30px;
+    text-align: center;
+
  
+}
+
+
+#quote-print-div {
+    width: 550px;
+}
+
+
+#save-quote-container {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    width: 550px;
+    height: 300px;
+}
+
+#get-quote{
+    font-size: 30px;
+    margin-top: 45px;
+    margin-left: 150px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 25px;
+
+
 }
